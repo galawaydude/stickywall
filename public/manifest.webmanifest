@@ -1,0 +1,10 @@
+{
+  "name": "Stickywall",
+  "short_name": "Stickywall",
+  "description": "A quiet, local-first wall for sticky notes.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f2e8",
+  "theme_color": "#f7f2e8",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
