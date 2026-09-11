@@ -1,11 +1,17 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
+import Scraps from "./Scraps";
+import { useRoute } from "./router";
 import "./styles.css";
+
+function Root() {
+  return useRoute() === "scraps" ? <Scraps /> : <App />;
+}
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
+    <Root />
   </StrictMode>,
 );
 

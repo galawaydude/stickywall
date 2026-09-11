@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
 import { clamp, screenToWorld, zoomAt, type Point, type Viewport } from "./geometry";
+import Nav from "./Nav";
 
 const STORAGE_KEY = "stickywall.board.v1";
 const NOTE_SIZE = 240;
@@ -307,6 +308,7 @@ export default function App() {
       </div>
 
       <div className="controls">
+        <Nav current="wall" />
         <button className="add-note" onClick={() => addNote()}><span aria-hidden="true">+</span> Add note</button>
         <button
           className="reset-view"
